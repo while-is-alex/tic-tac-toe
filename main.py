@@ -12,21 +12,23 @@ def play():
 
     while is_game:
         game.update_board()
+        # Checks if there are still moves available on the board
+        if not game.moves_available():
+            break
         # Checks if there are 2 human players
         if number_players == 2:
-            is_game = game.moves_available()
-            game.new_turn()
+            if is_game:
+                game.new_turn()
         # Or if there's only 1 human player vs an AI
         elif number_players == 1:
-            # If the active player is human
-            if game.player == 1:
-                is_game = game.moves_available()
-                game.new_turn()
-            # If the active player is an AI
-            elif game.player == 2:
-                is_game = game.moves_available()
-                game.ai_turn()
-        # Catches an invalid input
+            if is_game:
+                # If the active player is human
+                if game.player == 1:
+                    game.new_turn()
+                # If the active player is an AI
+                elif game.player == 2:
+                    game.ai_turn()
+        # Catches an invalid input for the number of players
         else:
             print('Number of players invalid. Please, choose 1 or 2 for the number of players.')
         # Checks if there's a winner

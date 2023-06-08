@@ -33,6 +33,16 @@ When playing versus the computer, the player is notified when it's the computer'
 
 ![ai-turn.png](https://i.ibb.co/dMYRkb8/ai-turn.png)
 
+### Checking for victory
+After every turn, the code checks whether any of the winning combinations is present on the board. If a victory is detected, it is announced who won and the player is prompted to inform whether they would like to play another game.
+
+![victory.png](https://i.ibb.co/5s1Kjbc/victory.png)
+
+### Checking for a tie
+It is also possible that the players fill up the board spaces without ever winning. In that case, the bode checks for that possibility and announces when a tie has happened, prompting the players to inform whether they would like to play another game.
+
+![tie.png](https://i.ibb.co/7RQ4rKH/tie.png)
+
 ## Requirements
 This app requires the following:
 

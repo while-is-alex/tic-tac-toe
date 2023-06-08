@@ -29,7 +29,7 @@ In case the player chooses a space that's already been chosen by the other playe
 ![already-occupied.png](https://i.ibb.co/1GxbNPk/already-occupied.png)
 
 ### Computer's turn
-When playing versus the computer, the player is notified when it's the computer's turn and the game displays what move did the computer make.
+When playing versus the computer, the player is notified when it's the computer's turn and the game displays what move the computer made.
 
 ![ai-turn.png](https://i.ibb.co/dMYRkb8/ai-turn.png)
 

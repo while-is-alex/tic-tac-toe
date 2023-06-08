@@ -39,7 +39,7 @@ After every turn, the code checks whether any of the winning combinations is pre
 ![victory.png](https://i.ibb.co/5s1Kjbc/victory.png)
 
 ### Checking for a tie
-It is also possible that the players fill up the board spaces without ever winning. In that case, the bode checks for that possibility and announces when a tie has happened, prompting the players to inform whether they would like to play another game.
+It is also possible that the players fill up the board spaces without ever winning. In that case, the code checks for that possibility and announces when a tie has happened, prompting the players to inform whether they would like to play another game.
 
 ![tie.png](https://i.ibb.co/7RQ4rKH/tie.png)
 
